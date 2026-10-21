@@ -1,0 +1,10 @@
+{
+  "name": "agendamiento-por-olas",
+  "version": "1.0.0",
+  "description": "Demo de agendamiento por olas con usuarios simulados y reglas de distribución de carga.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
