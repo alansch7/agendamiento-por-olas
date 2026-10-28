@@ -42,9 +42,11 @@ Los críticos se agendan después de las áreas y, si se puede, en la misma ola 
 | **Semilla fija** | Los mismos parámetros siempre producen el mismo plan, lo que facilita comparar escenarios y testear. |
 | **Lógica pura y testeada** | `src/olas.js` no toca el DOM. Los tests verifican las invariantes: nadie queda dos veces, no se excede la capacidad, se respetan los bloqueos y los topes de críticos. |
 
-## Resultado
+## Resultado (con datos de ejemplo)
 
-Con la configuración por defecto (120 usuarios, piloto + 4 olas, capacidad de 36 unidades por ola, Finanzas bloqueada por cierre contable):
+> Las cifras de esta sección salen de **usuarios simulados** (generados con la semilla 42), no de una migración real. Sirven para mostrar cómo se comporta el planificador.
+
+Con la configuración por defecto (120 usuarios simulados, piloto + 4 olas, capacidad de 36 unidades por ola, Finanzas bloqueada por cierre contable):
 
 - Los **120 usuarios quedan asignados** y **ninguna área se divide**.
 - La carga queda en 28–33 unidades por ola, con una **desviación de 1,9**.
